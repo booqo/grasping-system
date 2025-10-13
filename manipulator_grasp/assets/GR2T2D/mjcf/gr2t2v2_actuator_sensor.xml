@@ -1,0 +1,118 @@
+ <mujoco model="GR2T2">
+  <actuator>
+      <motor name="M_LLeg1"  joint="left_hip_pitch_joint" gear="1" ctrllimited="true" ctrlrange="-224.4 224.4"/>
+      <motor name="M_LLeg2"  joint="left_hip_roll_joint" gear="1" ctrllimited="true" ctrlrange="-95.472 95.472"/>
+      <motor name="M_LLeg3"  joint="left_hip_yaw_joint" gear="1" ctrllimited="true" ctrlrange="-43.83 43.83"/>
+      <motor name="M_LLeg4"  joint="left_knee_pitch_joint" gear="1" ctrllimited="true" ctrlrange="-224.4 224.4"/>
+      <motor name="M_LLeg5"  joint="left_ankle_pitch_joint" gear="1" ctrllimited="true" ctrlrange="-43.83 43.83"/>
+      <motor name="M_LLeg6"  joint="left_ankle_roll_joint" gear="1" ctrllimited="true" ctrlrange="-29.835 29.835"/>
+
+      <motor name="M_RLeg1"  joint="right_hip_pitch_joint" gear="1" ctrllimited="true" ctrlrange="-224.4 224.4"/>
+      <motor name="M_RLeg2"  joint="right_hip_roll_joint" gear="1" ctrllimited="true" ctrlrange="-95.472 95.472"/>
+      <motor name="M_RLeg3"  joint="right_hip_yaw_joint" gear="1" ctrllimited="true" ctrlrange="-43.83 43.83"/>
+      <motor name="M_RLeg4"  joint="right_knee_pitch_joint" gear="1" ctrllimited="true" ctrlrange="-224.4 224.4"/>
+      <motor name="M_RLeg5"  joint="right_ankle_pitch_joint" gear="1" ctrllimited="true" ctrlrange="-43.83 43.83"/>
+      <motor name="M_RLeg6"  joint="right_ankle_roll_joint" gear="1" ctrllimited="true" ctrlrange="-29.835 29.835"/>
+     
+      <motor name="M_Waist1" joint="waist_yaw_joint" gear="1" ctrllimited="true" ctrlrange="-74.45 74.45"/>
+      <motor name="M_Head1"  joint="head_yaw_joint" gear="1" ctrllimited="true" ctrlrange="-17.325 17.325"/>
+      <motor name="M_Head2"  joint="head_pitch_joint" gear="1" ctrllimited="true" ctrlrange="-17.325 17.325"/>
+      
+      <motor name="M_LArm1"  joint="left_shoulder_pitch_joint" gear="1" ctrllimited="true" ctrlrange="-74.45 74.45"/>
+      <motor name="M_LArm2"  joint="left_shoulder_roll_joint" gear="1" ctrllimited="true" ctrlrange="-74.45 74.45"/>
+      <motor name="M_LArm3"  joint="left_shoulder_yaw_joint" gear="1" ctrllimited="true" ctrlrange="-42.75 42.75"/>
+      <motor name="M_LArm4"  joint="left_elbow_pitch_joint" gear="1" ctrllimited="true" ctrlrange="-42.75 42.75"/>
+      <motor name="M_LArm5"  joint="left_wrist_yaw_joint" gear="1" ctrllimited="true" ctrlrange="-17.325 17.325"/>
+      <motor name="M_LArm6"  joint="left_wrist_pitch_joint" gear="1" ctrllimited="true" ctrlrange="-17.325 17.325"/>
+      <motor name="M_LArm7"  joint="left_wrist_roll_joint" gear="1" ctrllimited="true" ctrlrange="-17.325 17.325"/>
+
+      <motor name="M_RArm1"  joint="right_shoulder_pitch_joint" gear="1" ctrllimited="true" ctrlrange="-74.45 74.45"/>
+      <motor name="M_RArm2"  joint="right_shoulder_roll_joint" gear="1" ctrllimited="true" ctrlrange="-74.45 74.45"/>
+      <motor name="M_RArm3"  joint="right_shoulder_yaw_joint" gear="1" ctrllimited="true" ctrlrange="-42.75 42.75"/>
+      <motor name="M_RArm4"  joint="right_elbow_pitch_joint" gear="1" ctrllimited="true" ctrlrange="-42.75 42.75"/>
+      <motor name="M_RArm5"  joint="right_wrist_yaw_joint" gear="1" ctrllimited="true" ctrlrange="-17.325 17.325"/>
+      <motor name="M_RArm6"  joint="right_wrist_pitch_joint" gear="1" ctrllimited="true" ctrlrange="-17.325 17.325"/>
+      <motor name="M_RArm7"  joint="right_wrist_roll_joint" gear="1" ctrllimited="true" ctrlrange="-17.325 17.325"/>
+  </actuator>
+  
+  <sensor>
+     
+      <jointpos name="P_LLeg1" joint="left_hip_pitch_joint" />
+      <jointpos name="P_LLeg2" joint="left_hip_roll_joint" />
+      <jointpos name="P_LLeg3" joint="left_hip_yaw_joint" />
+      <jointpos name="P_LLeg4" joint="left_knee_pitch_joint" />
+      <jointpos name="P_LLeg5" joint="left_ankle_pitch_joint" />
+      <jointpos name="P_LLeg6" joint="left_ankle_roll_joint" />
+      
+      <jointpos name="P_RLeg1" joint="right_hip_pitch_joint" />
+      <jointpos name="P_RLeg2" joint="right_hip_roll_joint" />
+      <jointpos name="P_RLeg3" joint="right_hip_yaw_joint" />
+      <jointpos name="P_RLeg4" joint="right_knee_pitch_joint" />
+      <jointpos name="P_RLeg5" joint="right_ankle_pitch_joint" />
+      <jointpos name="P_RLeg6" joint="right_ankle_roll_joint" />
+
+         
+      <jointpos name="P_Wist1" joint="waist_yaw_joint" />
+      <jointpos name="P_Head1" joint="head_yaw_joint" />
+      <jointpos name="P_Head2" joint="head_pitch_joint" />
+
+      <jointpos name="P_LArm1" joint="left_shoulder_pitch_joint" />
+      <jointpos name="P_LArm2" joint="left_shoulder_roll_joint" />
+      <jointpos name="P_LArm3" joint="left_shoulder_yaw_joint" />
+      <jointpos name="P_LArm4" joint="left_elbow_pitch_joint" />
+      <jointpos name="P_LArm5" joint="left_wrist_yaw_joint" />
+      <jointpos name="P_LArm6" joint="left_wrist_pitch_joint" />
+      <jointpos name="P_LArm7" joint="left_wrist_roll_joint" />
+      
+      <jointpos name="P_RArm1" joint="right_shoulder_pitch_joint" />
+      <jointpos name="P_RArm2" joint="right_shoulder_roll_joint" />
+      <jointpos name="P_RArm3" joint="right_shoulder_yaw_joint" />
+      <jointpos name="P_RArm4" joint="right_elbow_pitch_joint" />
+      <jointpos name="P_RArm5" joint="right_wrist_yaw_joint" />
+      <jointpos name="P_RArm6" joint="right_wrist_pitch_joint" />
+      <jointpos name="P_RArm7" joint="right_wrist_roll_joint" />
+      
+      <jointvel name="V_LLeg1" joint="left_hip_pitch_joint" />
+      <jointvel name="V_LLeg2" joint="left_hip_roll_joint" />
+      <jointvel name="V_LLeg3" joint="left_hip_yaw_joint" />
+      <jointvel name="V_LLeg4" joint="left_knee_pitch_joint" />
+      <jointvel name="V_LLeg5" joint="left_ankle_pitch_joint" />
+      <jointvel name="V_LLeg6" joint="left_ankle_roll_joint" />
+      
+      <jointvel name="V_RLeg1" joint="right_hip_pitch_joint" />
+      <jointvel name="V_RLeg2" joint="right_hip_roll_joint" />
+      <jointvel name="V_RLeg3" joint="right_hip_yaw_joint" />
+      <jointvel name="V_RLeg4" joint="right_knee_pitch_joint" />
+      <jointvel name="V_RLeg5" joint="right_ankle_pitch_joint" />
+      <jointvel name="V_RLeg6" joint="right_ankle_roll_joint" />
+
+      <jointvel name="V_Waist1" joint="waist_yaw_joint" />
+      <jointvel name="V_Head1"  joint="head_yaw_joint" />
+      <jointvel name="V_Head2"  joint="head_pitch_joint" />
+
+      <jointvel name="V_LArm1" joint="left_shoulder_pitch_joint" />
+      <jointvel name="V_LArm2" joint="left_shoulder_roll_joint" />
+      <jointvel name="V_LArm3" joint="left_shoulder_yaw_joint" />
+      <jointvel name="V_LArm4" joint="left_elbow_pitch_joint" />
+      <jointvel name="V_LArm5" joint="left_wrist_yaw_joint" />
+      <jointvel name="V_LArm6" joint="left_wrist_pitch_joint" />
+      <jointvel name="V_LArm7" joint="left_wrist_roll_joint" />
+      
+      <jointvel name="V_RArm1" joint="right_shoulder_pitch_joint" />
+      <jointvel name="V_RArm2" joint="right_shoulder_roll_joint" />
+      <jointvel name="V_RArm3" joint="right_shoulder_yaw_joint" />
+      <jointvel name="V_RArm4" joint="right_elbow_pitch_joint" />
+      <jointvel name="V_RArm5" joint="right_wrist_yaw_joint" />
+      <jointvel name="V_RArm6" joint="right_wrist_pitch_joint" />
+      <jointvel name="V_RArm7" joint="right_wrist_roll_joint" />
+      
+      <accelerometer name="baselink-baseAcc" site="imu" />
+      <gyro name="baselink-gyro" site="imu" />
+      <framequat name="baselink-quat" objtype="site" objname="imu" />
+      <touch name="lf-touch" site="lf-tc" />
+      <touch name="rf-touch" site="rf-tc" />
+      <!--  -->
+      <framepos name="baselink-position" objtype="site" objname="imu" />
+      <framelinvel name="baselink-velocity" objtype="site" objname="imu" />    
+  </sensor>
+</mujoco>
